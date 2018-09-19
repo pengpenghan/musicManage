@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/layouts">
+	<excludes>
+	</excludes>
+	<decorator name="default" page="default.jsp">
+		<pattern>/manager/home/to</pattern>
+	</decorator>
+</decorators>

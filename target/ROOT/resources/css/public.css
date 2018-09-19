@@ -1,0 +1,35 @@
+body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol,
+li, dl, dt, dd, form, a, fieldset, input, th, td{margin: 0; padding: 0; border: 0; outline: none; font-family:Microsoft YaHei;
+    color: #666; }
+h1, h2, h3, h4, h5, h6,em,span{
+    padding:0;
+    font-weight: normal;
+}
+i,em{
+    font-style: normal;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+table{
+    border-collapse: collapse;
+}
+.marginBox{
+    margin:0 auto;
+}
+.bgf2f2f5{
+    background-color: #f2f2f5;
+}
+.floatL{
+    float: left;
+}
+.clearFloat:after{
+    display: block;
+    content: ' ';
+    visibility: hidden;
+    height:0;
+    clear: both;
+}

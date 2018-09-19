@@ -1,0 +1,707 @@
+.container{
+    width:100%;
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+/*鐧诲綍椤�*/
+.container-login{
+    background: url("../images/pic01.png") no-repeat;
+    padding-top: 82px;
+    box-sizing: border-box;
+    background-size: cover;
+}
+.container-login .loginBox{
+    width:507px;
+    height:532px;
+    margin:0 auto;
+    background-color: #ecf9ff;
+    box-shadow: 0 0 12px #817d82;
+}
+.container-login .loginBox h2{
+    font-size: 26px;
+    color: #333;
+    margin:0 0 0 35px;
+    padding-top: 35px;
+}
+.container-login .loginBox .login{
+    width:430px;
+    margin:0 auto;
+}
+.container-login .loginBox .login .iptWrapper{
+    width:100%;
+    position: relative;
+}
+.container-login .loginBox .login .iptWrapper input{
+    width:428px;
+    height:56px;
+    border: 1px solid #cdcdcd;
+    background-color: #fff;
+    margin-top: 51px;
+    font-size: 20px;
+    color: #c1c1c1;
+    text-indent: 71px;
+}
+.container-login .loginBox .login .iptWrapper i{
+    display: block;
+    position: absolute;
+    content: '111';
+    width:56px;
+    height:56px;
+    left:1px;
+    top:52px;
+    z-index: 111;
+}
+.container-login .loginBox .login .iptWrapper .usernameIcon{
+    background: url("../images/pic02.png") center no-repeat #e2e2e4;
+}
+.container-login .loginBox .login .iptWrapper .passwordIcon{
+    background: url("../images/pic03.png") center no-repeat #e2e2e4;
+}
+.container-login .loginBox .login .checkBox{
+    overflow: hidden;
+    margin:49px auto;
+    width:275px;
+}
+.container-login .loginBox .login .checkBox li{
+    font-size: 18px;
+    color: #797979;
+    float: left;
+    height:20px;
+    background: url("../images/pic05.png") 0 0 no-repeat;
+    line-height: 20px;
+    padding-left: 30px;
+    width:95px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.container-login .loginBox .login .checkBox li.active{
+    background: url("../images/pic04.png") 0 0 no-repeat;
+}
+.container-login .loginBox .login .checkBox li:nth-child(2){
+    float: right;
+}
+.container-login .loginBox .login .btn{
+    width:100%;
+    height:57px;
+    background-color: #00a0e9;
+    border-bottom: 1px solid #0074a9;
+    font-size: 25px;
+    color: #fff;
+    line-height: 57px;
+    text-align: center;
+    cursor: pointer;
+}
+/*绠＄悊鍛橀椤�*/
+.container-manageIndex header{
+    height:80px;
+    width:100%;
+    background-color: #0092d6;
+    line-height: 80px;
+}
+.container-manageIndex header .marginBox{
+    width:95%;
+    overflow: hidden;
+}
+.container-manageIndex header h2{
+    font-size: 20px;
+    color: #fff;
+    float: left;
+}
+.container-manageIndex header .quit{
+    float: right;
+}
+.container-manageIndex header .quit .identity{
+    font-size: 18px;
+    color: #fff;
+    height:21px;
+    line-height: 21px;
+    background: url("../images/pic06.png") no-repeat;
+    padding-left: 30px;
+}
+.container-manageIndex header .quit a{
+    font-size: 18px;
+    color: #ff0a1b;
+}
+.container-manageIndex header .quit a span{
+    color: #fff;
+}
+.container-manageIndex .nav{
+    overflow: hidden;
+    width:555px;
+    margin:322px auto 0 auto;
+}
+.container-manageIndex .nav a{
+    text-align: center;
+    float: left;
+    display: block;
+}
+.container-manageIndex .nav a:nth-child(2){
+    float: right;
+}
+.container-manageIndex .nav a .imgWrapper{
+    margin-bottom: 24px;
+}
+.container-manageIndex .nav a span{
+    font-size: 24px;
+    color: #0092d6;
+}
+/*绠＄悊鍛�-鏂囦欢鎼滅储*/
+.container-manageFileSearch header .title{
+    float: left;
+    overflow: hidden;
+}
+.container-manageFileSearch header .title .back{
+    float: left;
+    background: url("../images/pic09.png") 0 center no-repeat;
+    font-size: 18px;
+    color: #f44900;
+    padding-left: 15px;
+    margin-right: 20px;
+}
+.container-manageFileSearch header .title h2{
+    float: left;
+}
+.container-manageFileSearch .main .labelListBox{
+    width: 11.5%;
+    height:980px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    background-color: #f5f5f5;
+    margin:7px 0 0 9px;
+    float: left;
+}
+.container-manageFileSearch .main .labelListBox h2{
+    height:44px;
+    line-height: 44px;
+    text-align: center;
+    font-size: 20px;
+    color: #0092d6;
+    background-color: #e6e6e6;
+}
+.container-manageFileSearch .main .labelListBox .labelList .labelListUl{
+    margin-top: 16px;
+    max-height:880px;
+    overflow: auto;
+}
+.container-manageFileSearch .main .labelListBox .labelList .labelListUl li{
+    overflow: hidden;
+    height:18px;
+    line-height: 18px;
+    margin-bottom: 17px;
+}
+.container-manageFileSearch .main .labelListBox .labelList .labelListUl li>i,.container-manageFileSearch .main .labelListBox .labelList .labelListUl li>span{
+    float: left;
+    display: block;
+    cursor: pointer;
+}
+.container-manageFileSearch .main .labelListBox .labelList .labelListUl li .selected{
+    width:14px;
+    height:14px;
+    background: url("../images/pic10.png")  no-repeat;
+    margin:2px 0 0 8px;
+}
+.container-manageFileSearch .main .labelListBox .labelList .labelListUl li .selected.active{
+    background: url("../images/pic11.png")  no-repeat;
+}
+.container-manageFileSearch .main .labelListBox .labelList .labelListUl li .name{
+    font-size: 18px;
+    color: #0092d6;
+    margin-left: 12px;
+}
+.container-manageFileSearch .main .labelListBox .labelList .labelListUl li .delete{
+    float: right;
+    width:15px;
+    height:16px;
+    margin:1px 9px 0 0;
+    background: url("../images/pic12.png")  no-repeat;
+}
+.container-manageFileSearch .main .labelListBox .labelList .add{
+    font-size: 18px;
+    color: #f44900;
+    background: url("../images/pic13.png") 0 center no-repeat;
+    padding-left: 25px;
+    width:63px;
+    box-sizing: border-box;
+    margin:0 auto;
+    cursor: pointer;
+}
+.container-manageFileSearch .main .tableBox{
+    padding-top: 30px;
+    margin-left: 0px;
+    float: left;
+    width:87.5%;
+}
+.container-manageFileSearch .main .tableBox .searchBox{
+    overflow: hidden;
+    width:448px;
+    margin:0 auto 15px auto;
+}
+.container-manageFileSearch .main .tableBox .searchBox .searchIpt{
+    width:368px;
+    height:26px;
+    border: 1px solid #66bee6;
+    border-radius: 3px 0 0 3px;
+    float: left;
+    color: #787878;
+    text-indent: 6px;
+}
+.container-manageFileSearch .main .tableBox .searchBox .searchBtn{
+    width:78px;
+    height:28px;
+    color: #ffffff;
+    background: url("../images/pic14.png") 12px center no-repeat #0092d6;
+    display: inline-block;
+    float: left;
+    text-indent: 35px;
+    line-height: 28px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+.container-manageFileSearch .main .tableBox .selectAllAndDownload{
+    height:20px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    margin-right: 35px;
+}
+.container-manageFileSearch .main .tableBox .selectAllAndDownload .selectAll{
+    float: left;
+    background: url("../images/pic16.png") 0 center no-repeat;
+    font-size: 20px;
+    color: #000;
+    padding-left: 28px;
+    cursor: pointer;
+}
+.container-manageFileSearch .main .tableBox .selectAllAndDownload .selectAll.active{
+    background: url("../images/pic04.png")  no-repeat;
+}
+.container-manageFileSearch .main .tableBox .selectAllAndDownload .download{
+    font-size: 20px;
+    color: #666;
+    float: right;
+    background: url("../images/pic15.png") 0 center no-repeat;
+    padding-left: 28px;
+    cursor: pointer;
+}
+.container-manageFileSearch .main .tableBox .tableWrapper{
+    height:836px;
+    width:100%;
+    overflow: auto;
+}
+.container-manageFileSearch .main .tableBox table{
+    width:100%;
+}
+.container-manageFileSearch .main .tableBox table tr{
+    height:44px;
+}
+.container-manageFileSearch .main .tableBox table tr:nth-child(odd){
+    background-color: #f5f5f5;
+}
+.container-manageFileSearch .main .tableBox table td{
+    font-size: 18px;
+}
+.container-manageFileSearch .main .tableBox table td.musicName{
+    color: #333;
+    background: url("../images/pic10.png") 12px center no-repeat;
+    padding-left: 38px;
+    cursor: pointer;
+}
+.container-manageFileSearch .main .tableBox table td.musicName.active{
+    background: url("../images/pic11.png") 12px center no-repeat;
+}
+.container-manageFileSearch .main .tableBox table td:nth-child(2){
+    color: #666;
+}
+.container-manageFileSearch .cover{
+    width:100%;
+    height:100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1111111;
+    left:0;
+    top:0;
+    display: none;
+}
+.container-manageFileSearch .cover .addLabelBox{
+    width:303px;
+    height:182px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.container-manageFileSearch .cover .addLabelBox .head{
+    height:40px;
+    line-height: 40px;
+    background-color: #0092d6;
+    width: 100%;
+}
+.container-manageFileSearch .cover .addLabelBox .head h2{
+    font-size: 18px;
+    color: #fff;
+    text-indent: 13px;
+    float: left;
+}
+.container-manageFileSearch .cover .addLabelBox .head .close{
+    float: right;
+    width:13px;
+    height:13px;
+    background: url("../images/pic17.png") no-repeat;
+    margin:14px 13px 0 0;
+    cursor: pointer;
+}
+.container-manageFileSearch .cover .addLabelBox .title{
+    font-size: 22px;
+    color: #666;
+   padding-left: 13px;
+    display: block;
+    margin-top: 15px;
+}
+.container-manageFileSearch .cover .addLabelBox>input{
+    width:80%;
+    height:36px;
+    border: 1px solid #66bee6;
+    border-radius: 3px;
+    color: #787878;
+    text-indent: 6px;
+    margin:10px 0 10px 10%;
+    font-size: 18px;
+}
+.container-manageFileSearch .cover .addLabelBox .btns{
+    overflow: hidden;
+    width:180px;
+    margin:0 auto;
+}
+.container-manageFileSearch .cover .addLabelBox .btns span{
+    width:64px;
+    height:28px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+    float: left;
+    cursor: pointer;
+}
+.container-manageFileSearch .cover .addLabelBox .btns .cancel{
+    background-color: #999;
+}
+.container-manageFileSearch .cover .addLabelBox .btns .complete{
+    background-color: #0092d6;
+    float: right;
+}
+/*绠＄悊鍛�-鍛樺伐绠＄悊*/
+.container-staff .main .tableBox{
+    float: none;
+    width:94%;
+}
+.container-staff .main .tableBox .selectAllAndDownload{
+    height:28px;
+    line-height: 28px;
+    margin-left: 12px;
+    margin-right: 0;
+}
+.container-staff .main .tableBox .selectAllAndDownload .staffList{
+    font-size: 20px;
+    color: #000;
+    float: left;
+}
+.container-staff .main .tableBox .addStaff{
+    display: block;
+    width:72px;
+    height:28px;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    background-color: #188ecb;
+    float: right;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.container-staff .main .tableBox .tableWrapper{
+
+}
+.container-staff .main .tableBox .tableWrapper tr{
+
+}
+.container-staff .main .tableBox .tableWrapper th{
+    background-color: #e0e0e0;
+    font-size: 20px;
+    color: #0092d6;
+}
+.container-staff .main .tableBox .tableWrapper td{
+    text-align: center;
+}
+.container-staff .main .tableBox .tableWrapper td .workDetail{
+    font-size: 18px;
+    color: #0092d6;
+    text-decoration: underline;
+}
+.container-staff .main .tableBox .tableWrapper td .changePsw{
+    display: inline-block;
+    width:16px;
+    height:16px;
+    background: url("../images/pic18.png") no-repeat;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.container-staff .cover .addLabelBox .iptWrapper{
+    font-size: 20px;
+    color: #333;
+    margin:14px 0 0 27px;
+    overflow: hidden;
+}
+.container-staff .cover .addLabelBox .iptWrapper span{
+    width:60px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.container-staff .cover .addLabelBox .iptWrapper input{
+    width:178px;
+    height:26px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    float: left;
+    color: #787878;
+    text-indent: 6px;
+    font-size: 18px;
+}
+.container-staff .cover .addLabelBox .btns{
+    margin-top: 16px;
+}
+/*绠＄悊鍛�-鍛樺伐绠＄悊-宸ヤ綔璇︽儏*/
+.container-workDetail .main .tableBox .tableWrapper td:nth-child(2){
+    color: #0092d6;
+}
+.container-workDetail .main .tableBox .tableWrapper td .tips{
+    color: #ff0a1b;
+    font-size: 18px;
+}
+.container-workDetail .main .tableBox .tableWrapper td .modify{
+    display: inline-block;
+    width:16px;
+    height:16px;
+    background: url("../images/pic19.png") no-repeat;
+    cursor: pointer;
+    margin-left: 8px;
+}
+.container-workDetail .main .tableBox .addStaff{
+    width:72px;
+    float: left;
+    margin-left:18px;
+}
+.container-workDetail .coverModifyWorkDetail{
+	
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox{
+    width:600px;
+    height:auto;
+    position:absolute;
+    left:650px;
+    top:100px;
+    padding-bottom:20px;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox table{
+	margin:10px auto;
+	width:320px;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox tr{
+	margin-top:14px;
+	display:block;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox td{
+	color:#333;
+	font-size:20px;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox td:nth-child(1){
+	width:130px;
+	text-align:center;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox td .modifyipt{
+    width:178px;
+    height:26px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    color: #787878;
+    text-indent: 6px;
+    font-size: 18px;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox td .labelList{
+	height:150px;
+	width:178px;
+	overflow:auto;
+	border: 1px solid #999;
+	border-radius: 3px;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox td .labelList li{
+	float:left;
+	padding:0 10px;
+	height:26px;
+	border: 1px solid #999;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align:center;
+   	margin:6px;
+   	cursor:pointer;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox td .labelList li.active{
+	color:#000;
+	background:#0092d6;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox td textarea{
+	width:178px;
+    height:100px;
+    border: 1px solid #999;
+    border-radius: 3px;
+    color: #787878;
+    text-indent: 6px;
+    font-size: 18px;
+    resize:none;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox td .uploadFileBtn{
+	height:26px;
+	border: 1px solid #999;
+    border-radius: 3px;
+    display:block;
+    text-align:center;
+    position:relative;
+    float:left;
+}
+.container-workDetail .coverModifyWorkDetail .addLabelBox td .uploadFile{
+	opacity:0;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+}
+/*鍛樺伐鐣岄潰*/
+.container-employee .main{
+
+}
+.container-employee .main .transportList{
+    float: left;
+    width:18.7%;
+    height:1000px;
+    background-color: #f0f0f0;
+    border-right:1px solid #ccc;
+}
+.container-employee .main .transportList h2{
+    font-size: 18px;
+    color: #0092d6;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #ccc;
+}
+.container-employee .main .transportList ul{
+
+}
+.container-employee .main .transportList ul li{
+    overflow: hidden;
+    line-height: 46px;
+}
+.container-employee .main .transportList ul li .transportName{
+    font-size: 18px;
+    color: #666;
+    float: left;
+    margin:0 0 0 10px;
+}
+.container-employee .main .transportList ul li .result{
+    font-size: 18px;
+    color: #666;
+    float: right;
+    margin:0 30px 0 0;
+}
+.container-employee .main .tableBox{
+    float: left;
+    width:100%;
+    padding-top: 16px;
+}
+.container-employee .main .tableBox .selectAllAndDownload .download{
+    margin-right: 20px;
+    background: url(../images/pic20.png) 0 center no-repeat;
+    padding-left: 24px;
+    position: relative;
+    overflow: hidden;
+}
+.container-employee .main .tableBox .selectAllAndDownload .download .uploadFile{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+}
+.container-employee .main .tableBox .tableWrapper td:nth-child(8){
+    color: #ff0a1b;
+}
+.container-employee .coverModifyWorkDetail .addLabelBox td.xl{
+  
+}
+.container-employee .coverModifyWorkDetail .addLabelBox td.xl ul{
+	position:absolute;
+	display:none;
+	width:178px;
+	border: 1px solid #999;
+    border-radius: 3px;
+    color: #787878;
+    text-indent: 6px;
+    font-size: 18px;
+    z-index:111;
+    background:#fff;
+}
+.container-employee .coverModifyWorkDetail .addLabelBox td.xl ul li{
+	cursor:pointer;
+}
+.container-employee .coverModifyWorkDetail .addLabelBox td.xl ul li:hover{
+	background:#0092d6;
+	color:#fff;
+}
+.container-employee .cover .addLabelBox{
+    width: 435px;
+    height:auto;
+    padding-bottom: 16px;
+    left:750px;
+    top:100px;
+}
+.container-employee .cover .addLabelBox .marginBox{
+    overflow: hidden;
+}
+.container-employee .cover .addLabelBox .marginBox .left{
+    overflow: hidden;
+    float: left;
+    width:214px;
+    padding-left: 18px;
+    box-sizing: border-box;
+}
+.container-employee .cover .addLabelBox .marginBox .right{
+
+}
+.container-employee .cover .addLabelBox .marginBox dt{
+    color: #333;
+    padding-left: 13px;
+    margin:9px 0 27px 0;
+}
+.container-employee .cover .addLabelBox .marginBox dd{
+    float: left;
+    font-size: 18px;
+    color: #787878;
+    height:18px;
+    line-height: 18px;
+    background: url(../images/pic10.png) 0 center no-repeat;
+    padding-left: 25px;
+    width:98px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.container-employee .cover .addLabelBox .marginBox dd.active{
+    background: url(../images/pic11.png) 0 center no-repeat;
+}
+.container-employee .cover .addLabelBox .btns{
+    width:212px;
+    margin-top: 35px;
+}

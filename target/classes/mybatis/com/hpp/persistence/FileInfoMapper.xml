@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hpp.persistence.FileInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.hpp.model.FileInfo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="music_name" property="musicName" jdbcType="VARCHAR" />
+    <result column="file_name" property="fileName" jdbcType="VARCHAR" />
+    <result column="text_book" property="textBook" jdbcType="VARCHAR" />
+    <result column="press_version" property="pressVersion" jdbcType="VARCHAR" />
+    <result column="page_num" property="pageNum" jdbcType="INTEGER" />
+    <result column="file_path" property="filePath" jdbcType="VARCHAR" />
+    <result column="ctime" property="ctime" jdbcType="VARCHAR" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="labels" property="labels" jdbcType="VARCHAR" />
+    <result column="other_info" property="otherInfo" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, user_id, music_name, file_name, text_book, press_version, page_num, file_path, 
+    ctime, status, remark, labels, other_info
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from db_file_info
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from db_file_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hpp.model.FileInfo" >
+    insert into db_file_info (id, user_id, music_name, 
+      file_name, text_book, press_version, 
+      page_num, file_path, ctime, 
+      status, remark, labels, 
+      other_info)
+    values (#{id,jdbcType=INTEGER}, #{userId,jdbcType=INTEGER}, #{musicName,jdbcType=VARCHAR}, 
+      #{fileName,jdbcType=VARCHAR}, #{textBook,jdbcType=VARCHAR}, #{pressVersion,jdbcType=VARCHAR}, 
+      #{pageNum,jdbcType=INTEGER}, #{filePath,jdbcType=VARCHAR}, #{ctime,jdbcType=VARCHAR}, 
+      #{status,jdbcType=TINYINT}, #{remark,jdbcType=VARCHAR}, #{labels,jdbcType=VARCHAR}, 
+      #{otherInfo,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" useGeneratedKeys="true" keyProperty="id" parameterType="com.hpp.model.FileInfo" >
+    insert into db_file_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="musicName != null" >
+        music_name,
+      </if>
+      <if test="fileName != null" >
+        file_name,
+      </if>
+      <if test="textBook != null" >
+        text_book,
+      </if>
+      <if test="pressVersion != null" >
+        press_version,
+      </if>
+      <if test="pageNum != null" >
+        page_num,
+      </if>
+      <if test="filePath != null" >
+        file_path,
+      </if>
+      <if test="ctime != null" >
+        ctime,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="remark != null" >
+        remark,
+      </if>
+      <if test="labels != null" >
+        labels,
+      </if>
+      <if test="otherInfo != null" >
+        other_info,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="musicName != null" >
+        #{musicName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileName != null" >
+        #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="textBook != null" >
+        #{textBook,jdbcType=VARCHAR},
+      </if>
+      <if test="pressVersion != null" >
+        #{pressVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="pageNum != null" >
+        #{pageNum,jdbcType=INTEGER},
+      </if>
+      <if test="filePath != null" >
+        #{filePath,jdbcType=VARCHAR},
+      </if>
+      <if test="ctime != null" >
+        #{ctime,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="labels != null" >
+        #{labels,jdbcType=VARCHAR},
+      </if>
+      <if test="otherInfo != null" >
+        #{otherInfo,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hpp.model.FileInfo" >
+    update db_file_info
+    <set >
+      <if test="userId != null" >
+        user_id = #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="musicName != null" >
+        music_name = #{musicName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileName != null" >
+        file_name = #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="textBook != null" >
+        text_book = #{textBook,jdbcType=VARCHAR},
+      </if>
+      <if test="pressVersion != null" >
+        press_version = #{pressVersion,jdbcType=VARCHAR},
+      </if>
+      <if test="pageNum != null" >
+        page_num = #{pageNum,jdbcType=INTEGER},
+      </if>
+      <if test="filePath != null" >
+        file_path = #{filePath,jdbcType=VARCHAR},
+      </if>
+      <if test="ctime != null" >
+        ctime = #{ctime,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="remark != null" >
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="labels != null" >
+        labels = #{labels,jdbcType=VARCHAR},
+      </if>
+      <if test="otherInfo != null" >
+        other_info = #{otherInfo,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hpp.model.FileInfo" >
+    update db_file_info
+    set user_id = #{userId,jdbcType=INTEGER},
+      music_name = #{musicName,jdbcType=VARCHAR},
+      file_name = #{fileName,jdbcType=VARCHAR},
+      text_book = #{textBook,jdbcType=VARCHAR},
+      press_version = #{pressVersion,jdbcType=VARCHAR},
+      page_num = #{pageNum,jdbcType=INTEGER},
+      file_path = #{filePath,jdbcType=VARCHAR},
+      ctime = #{ctime,jdbcType=VARCHAR},
+      status = #{status,jdbcType=TINYINT},
+      remark = #{remark,jdbcType=VARCHAR},
+      labels = #{labels,jdbcType=VARCHAR},
+      other_info = #{otherInfo,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <!-- 获取单个文件对象 -->
+  <select id="selectFileInfo" parameterType="java.util.Map" resultMap="BaseResultMap">
+  	select 
+    <include refid="Base_Column_List" />
+    from db_file_info
+    <where>
+    	<if test="id != null" >
+	      and id = #{id,jdbcType=INTEGER}
+	    </if>
+	    <if test="userId != null" >
+	      and user_id = #{userId,jdbcType=INTEGER}
+	    </if>
+	    <if test="fileName != null" >
+	      and file_name = #{fileName,jdbcType=VARCHAR}
+	    </if>
+	    <if test="filePath != null" >
+	      and file_path = #{filePath,jdbcType=VARCHAR}
+	    </if>
+	    <if test="ctime != null" >
+	      and ctime = #{ctime,jdbcType=VARCHAR}
+	    </if>
+	    <if test="status != null" >
+	      and status = #{status,jdbcType=TINYINT}
+	    </if>
+    </where>
+  </select>
+  <!-- 获取上传文件列表 -->
+  <select id="selectFileInfoList" parameterType="java.util.Map" resultMap="BaseResultMap">
+  	select 
+    <include refid="Base_Column_List" />
+    from db_file_info
+    <where>
+	    <if test="userId != null" >
+	      and user_id = #{userId,jdbcType=INTEGER}
+	    </if>
+	    <if test="fileName != null" >
+	      and file_name = #{fileName,jdbcType=VARCHAR}
+	    </if>
+	    <if test="filePath != null" >
+	      and file_path = #{filePath,jdbcType=VARCHAR}
+	    </if>
+	    <if test="ctime != null" >
+	      and ctime = #{ctime,jdbcType=VARCHAR}
+	    </if>
+	    <if test="status != null" >
+	      and status = #{status,jdbcType=TINYINT}
+	    </if>
+	    <if test="type != null and type == 1" >
+	      and labels != "" and labels is not null
+	    </if>
+    </where>
+    order by ctime desc
+    <if test="pageNo != null and pageSize != null">
+       limit #{pageNo},#{pageSize}
+    </if>
+    </select>
+    <!-- 获取列表数目 -->
+    <select id="selectFileInfoListCount" parameterType="java.util.Map" resultType="java.lang.Integer">
+  	select 
+    count(*)
+    from db_file_info
+    <where>
+	    <if test="userId != null" >
+	      and user_id = #{userId,jdbcType=INTEGER}
+	    </if>
+	    <if test="fileName != null" >
+	      and file_name = #{fileName,jdbcType=VARCHAR}
+	    </if>
+	    <if test="filePath != null" >
+	      and file_path = #{filePath,jdbcType=VARCHAR}
+	    </if>
+	    <if test="ctime != null" >
+	      and ctime = #{ctime,jdbcType=VARCHAR}
+	    </if>
+	    <if test="status != null" >
+	      and status = #{status,jdbcType=TINYINT}
+	    </if>
+	    <if test="type != null and type == 1" >
+	      and labels != "" and labels is not null
+	    </if>
+    </where>
+  </select>
+  <!-- 获取所属教材名列表 -->
+  <select id="getTextBookType" parameterType="java.util.Map" resultType="java.lang.String">
+  	select text_book from db_file_info
+  	<where>
+	    <if test="userId != null" >
+	      and user_id = #{userId,jdbcType=INTEGER}
+	    </if>
+	</where>
+  	group by text_book
+  	order by text_book desc 
+  </select>
+  <!-- 获取出版社及版本列表 -->
+  <select id="getPressVersionType" parameterType="java.util.Map" resultType="java.lang.String">
+  	select press_version from db_file_info
+  	<where>
+	    <if test="userId != null" >
+	      and user_id = #{userId,jdbcType=INTEGER}
+	    </if>
+	</where>
+  	group by press_version
+  	order by press_version desc 
+  </select>
+</mapper>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>员工界面</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../jQuery/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="container container-manageIndex container-manageFileSearch container-staff container-workDetail container-employee">
+        <header>
+            <div class="marginBox">
+                <div class="title">
+                    <h2>员工界面</h2>
+                </div>
+                <div class="quit">
+                    <span class="identity">张三</span>
+                    <a href="login.html"><span>【</span>退出<span>】</span></a>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="transportList">
+                <h2>传输列表</h2>
+                <ul>
+                    <li>
+                        <span class="transportName">我爱北京天安门.mp3</span>
+                        <span class="result">传输完成</span>
+                    </li>
+                    <li>
+                        <span class="transportName">我爱北京天安门.mp3</span>
+                        <span class="result">传输完成</span>
+                    </li>
+                    <li>
+                        <span class="transportName">我爱北京天安门.mp3</span>
+                        <span class="result">传输完成</span>
+                    </li>
+                    <li>
+                        <span class="transportName">我爱北京天安门.mp3</span>
+                        <span class="result">传输完成</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="tableBox">
+                <div class="selectAllAndDownload">
+                    <span class="staffList">已上传歌曲列表</span>
+                    <span class="download"><input type="file" class="uploadFile">上传</span>
+                </div>
+                <div class="tableWrapper">
+                    <table>
+                        <tr>
+                            <th width="25%">歌曲名称</th>
+                            <th width="25%">标记值</th>
+                            <th width="25%">备注</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td>我爱北京天安门.mp3</td>
+                            <td>中文、搞笑、4岁儿童</td>
+                            <td>标签有误</td>
+                            <td><i class="modify"></i></td>
+                        </tr>
+                        <tr>
+                            <td>我爱北京天安门.mp3</td>
+                            <td>中文、搞笑、4岁儿童</td>
+                            <td>标签有误</td>
+                            <td><i class="modify"></i></td>
+                        </tr>
+                        <tr>
+                            <td>我爱北京天安门.mp3</td>
+                            <td>中文、搞笑、4岁儿童</td>
+                            <td>标签有误</td>
+                            <td><i class="modify"></i></td>
+                        </tr>
+                        <tr>
+                            <td>我爱北京天安门.mp3</td>
+                            <td>中文、搞笑、4岁儿童</td>
+                            <td>标签有误</td>
+                            <td><i class="modify"></i></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--修改标记值-->
+        <div class="cover" id="modifyTips">
+            <div class="addLabelBox">
+                <div class="head"><h2>修改标签和文件类别</h2><i class="close"></i></div>
+                <div class="marginBox">
+                    <dl class="left">
+                        <dt>选择标签</dt>
+                        <dd>中文</dd>
+                        <dd>四岁</dd>
+                        <dd>爱国</dd>
+                        <dd>英文</dd>
+                    </dl>
+                    <dl class="left right">
+                        <dt>选择类别</dt>
+                        <dd>乐谱</dd>
+                        <dd>歌曲</dd>
+                        <dd>乐理</dd>
+                        <dd>家长引导</dd>
+                    </dl>
+                </div>
+                <div class="btns">
+                    <span class="cancel">取消</span>
+                    <span class="complete">完成</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/index.js"></script>
+</html>
